@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog dialog = new AlertDialog.Builder(this, R.style.CustomDialogTheme)
                 .setTitle("Nuke planet Jupiter?")
                 .setMessage("Note that nuking planet Jupiter will destroy everything in there.")
-                .setPositiveButton("Nuke Jupiter", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Nuke", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Log.d("MainActivity", "Sending bombs to earth");
@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
                         Log.d("MainActivity", "Aborting mission");
                     }
                 })
-                .setNeutralButton("Neural", null)
+                .setNeutralButton("Neutral", null)
                 .create();
         dialog.setCanceledOnTouchOutside(false);
         dialog.show();
