@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dialog_multi_choice_array">
+        <item>The Dark Knight</item>
+        <item>The Shawshank Redemption</item>
+        <item>Saving Private Ryan</item>
+        <item>The Silence of the Lambs</item>
+    </string-array>
+
+    <string-array name="dialog_single_choice_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+</resources>

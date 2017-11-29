@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.chikeandroid.tutsplus_showing_android_dialogs.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal">
+
+        <Button
+                android:id="@+id/show_alert_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show alert dialog"/>
+        <Button
+                android:id="@+id/show_multichoice_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Multi choice dialog"/>
+
+        <Button
+                android:id="@+id/show_single_choice_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Single Choice dialog"/>
+
+        <Button
+                android:id="@+id/show_alert_dialog_rotation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Alert dialog (Rotation)"/>
+
+        <Button
+                android:id="@+id/show_date_picker_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show date picker dialog"/>
+
+        <Button
+                android:id="@+id/show_time_picker_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show time picker dialog"/>
+
+        <Button
+                android:id="@+id/show_bottom_sheet_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show bottom sheet dialog"/>
+
+        <Button
+                android:id="@+id/show_full_screen_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show fullscreen dialog"/>
+
+    </LinearLayout>
+
+    <!--bottom sheet container-->
+    <FrameLayout
+            android:id="@+id/framelayout_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/bottom_sheet_behavior" />
+</android.support.design.widget.CoordinatorLayout>
