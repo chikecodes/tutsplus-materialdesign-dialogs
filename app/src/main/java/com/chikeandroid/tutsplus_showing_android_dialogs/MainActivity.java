@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showAlertDialog() {
-        AlertDialog dialog = new AlertDialog.Builder(this, R.style.CustomDialogTheme)
+        AlertDialog dialog = new AlertDialog.Builder(this)
                 .setTitle("Nuke planet Jupiter?")
                 .setMessage("Note that nuking planet Jupiter will destroy everything in there.")
                 .setPositiveButton("Nuke", new DialogInterface.OnClickListener() {
@@ -183,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
                         Log.d("MainActivity", "Sending bombs to earth");
                     }
                 })
-                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Abort", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Log.d("MainActivity", "Aborting mission");

@@ -18,7 +18,7 @@ public class AlertDialogFragment extends DialogFragment implements DialogInterfa
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
         return (builder.setTitle("Activate superpowers?").setMessage("By activating superpowers, you'll have more powers to save the world.")
-                       .setPositiveButton("Ok", this)
+                       .setPositiveButton("Activate", this)
                        .setNegativeButton("Cancel", this)
                        .create());
     }
