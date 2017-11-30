@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showAlertDialog() {
-        AlertDialog dialog = new AlertDialog.Builder(this)
+        AlertDialog dialog = new AlertDialog.Builder(this, R.style.CustomDialogTheme)
                 .setTitle("Nuke planet Jupiter?")
                 .setMessage("Note that nuking planet Jupiter will destroy everything in there.")
                 .setPositiveButton("Nuke", new DialogInterface.OnClickListener() {
